@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:gravity="center"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
     <TextView
-        android:text="Hello World!"
+        android:text="@string/hello_world"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/title_style" />
+        style="@style/color_full" />
 
     <RadioButton
-        style="@style/title_style"
-        android:text="radio button"
+        style="@style/color_full"
+        android:text="@string/radio_button"
         android:textSize="22sp"
         android:layout_width="wrap_content"
+        tools:visibility="visible"
+        android:visibility="gone"
         android:layout_height="wrap_content" />
 
     <CheckBox
-        android:text="check box"
-        style="@style/title_style"
+        android:text="@string/check_box"
+        style="@style/color_full"
+        tools:visibility="visible"
+        android:visibility="gone"
         android:textSize="22sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
