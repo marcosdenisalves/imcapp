@@ -7,7 +7,7 @@ import android.util.Log
 class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_result)
+        setContentView(R.layout.relative_main)
         Log.e("ciclo", "Ciclo de criação")
     }
 }
