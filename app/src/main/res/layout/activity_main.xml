@@ -1,33 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:gravity="center"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
 
     <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/color_full" />
+        android:text="IMC"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/holo_blue_dark"
+        style="@style/EditTextStyle" />
 
-    <RadioButton
-        style="@style/color_full"
-        android:text="@string/radio_button"
-        android:textSize="22sp"
-        android:layout_width="wrap_content"
-        tools:visibility="visible"
-        android:visibility="gone"
-        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/inputTxtOne"
+        android:hint="Insira seu peso em kg"
+        style="@style/EditTextStyle" />
 
-    <CheckBox
-        android:text="@string/check_box"
-        style="@style/color_full"
-        tools:visibility="visible"
-        android:visibility="gone"
-        android:textSize="22sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    
+    <EditText
+        android:id="@+id/inputTxtTwo"
+        android:hint=""
+        style="@style/EditTextStyle"/>
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:text="calcular"
+        android:layout_marginTop="40dp"
+        android:layout_width="150dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_marginTop="60dp"
+        android:layout_width="250dp"
+        android:layout_height="150dp" />
 </LinearLayout>
