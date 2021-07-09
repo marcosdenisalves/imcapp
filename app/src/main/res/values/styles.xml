@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
    <style name="EditTextStyle">
-        <item name="android:inputType">number</item>
+        <item name="android:inputType">numberDecimal</item>
         <item name="android:textAlignment">center</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:layout_marginBottom">15dp</item>
-        <item name="android:layout_width">260dp</item>
+        <item name="android:layout_width">200dp</item>
         <item name="android:layout_height">55dp</item>
     </style>
 </resources>
